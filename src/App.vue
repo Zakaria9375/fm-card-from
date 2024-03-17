@@ -58,7 +58,7 @@
 </script>
 
 <template>
-	<div class="max-w-[1049px] mx-auto xflex lmd:flex-col gap-4">
+	<div class="max-w-[1049px] mr-[14.653%] ml-[10.278%] xflex lmd:flex-col gap-4">
 		<section
 			class="relative max-w-[541px] md:basis-[51%] lmd:mx-auto md:flex-1 flex flex-col lmd:flex-col-reverse md:mr-6 lmd:mt-8"
 		>
