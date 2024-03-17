@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	background-image: url("../images/bg-main-desktop.png");
+	background-repeat: no-repeat;
+	background-size: 33.5% 100%;
+}
+@media (max-width: 768px) {
+	body {
+		background-image: url("../images/bg-main-mobile.png");
+		background-size: contain;
+	}
+}
+
+@layer base {
+	body {
+		@apply font-medium text-[18px] min-h-dvh w-full;
+	}
+	h2 {
+		@apply text-[28px] leading-9 tracking-[3.42px] lmd:tracking-[2.2px] lmd:leading-[23px] lmd:text-[18px] uppercase tablet:text-[22px];
+	}
+	h1 {
+		@apply text-[28px] leading-9 tracking-[3.42px] uppercase;
+	}
+	p {
+		@apply leading-[23px] text-vMd;
+	}
+}
+@layer components {
+	.xflex {
+		@apply flex items-center justify-between;
+	}
+	.zflex {
+		@apply flex items-center justify-center;
+	}
+}
