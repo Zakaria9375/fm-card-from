@@ -2,7 +2,7 @@
 
 This is a solution to the [Interactive card details form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-![Design preview](./design/desktop-design.jpg)
+![Design preview](./public/design/desktop-design.jpg)
 
 ## Technologies
 
@@ -26,7 +26,7 @@ npm run dev
 ## Links
 
 * [Challenge](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv)  
-* [Live](https://zakaria9375.github.io/fm-card-form/)
+* [Live](https://icard-form.netlify.app/)
 
 ## Author
 
