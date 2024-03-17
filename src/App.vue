@@ -58,13 +58,12 @@
 </script>
 
 <template>
-	<main class="max-w-[1049px] mr-[14.653%] ml-[10.278%] xflex lmd:flex-col gap-4" role="main" aria-label="main content of the page">
+	<main class="max-w-[1049px] mr-[14.653%] ml-[10.278%] xflex lmd:flex-col gap-4" aria-label="main content of the page">
 		<section
 			class="relative max-w-[541px] md:basis-[51%] lmd:mx-auto md:flex-1 flex flex-col lmd:flex-col-reverse md:mr-6 lmd:mt-8"
 			aria-label="card details"
-			role="region"
 		>
-			<div class="relative mb-[37px] w-[82.625%] lmd:z-20 lsm:mt-[-70px]" aria-label="card-details-front">
+			<div class="relative mb-[37px] w-[82.625%] lmd:z-20 lsm:mt-[-70px]">
 				<img src="/images/bg-card-front.png" alt="visa card front display" />
 				<div class="absolute z-10 left-0 top-0 bottom-0 right-0 text-white">
 					<img
@@ -72,10 +71,10 @@
 						alt="visa card logo"
 						class="absolute top-[11.43%] left-[7.16%]"
 					/>
-					<h2 class="absolute top-[56.735%] left-[7.16%]" aria-label="card number" >
+					<h2 class="absolute top-[56.735%] left-[7.16%]"  >
 						{{ visaCard.cardNumber }}
 					</h2>
-					<div class="xflex absolute top-[81.837%] left-[7.16%] right-[7.16%]" aria-label="card details">
+					<div class="xflex absolute top-[81.837%] left-[7.16%] right-[7.16%]" >
 						<span class="cd">{{ visaCard.cardName }}</span>
 						<p class="cd">
 							<span class="">{{ visaCard.month }}</span
@@ -94,7 +93,6 @@
 		</section>
 		<section
 			class="md:basis-[36.5%] md:max-w-[381px] lmd:zflex lmd:mt-10 lsm:mt-0 lmd:px-2 lmd:pb-11"
-			role="region"
 			aria-label="card form container"
 			aria-describedby="card form and success message"
 		>
@@ -103,7 +101,6 @@
 				@submit.prevent="onSubmit"
 				class="max-w-[381px]"
 				autocomplete="on"
-				role="form"
 				aria-label="card form"
 			>
 				<BaseInput
