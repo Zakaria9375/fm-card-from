@@ -19,10 +19,10 @@ body {
 		@apply font-medium text-[18px] min-h-dvh w-full;
 	}
 	h2 {
-		@apply text-[28px] leading-9 tracking-[3.42px] lmd:tracking-[2.2px] lmd:leading-[23px] lmd:text-[18px] uppercase tablet:text-[22px];
+		@apply text-[28px] leading-9 tracking-[3.422px] lmd:tracking-[2.2px] lmd:leading-[23px] lmd:text-[18px] uppercase tablet:text-[22px];
 	}
 	h1 {
-		@apply text-[28px] leading-9 tracking-[3.42px] uppercase;
+		@apply text-[28px] leading-9 tracking-[3.422px] uppercase;
 	}
 	p {
 		@apply leading-[23px] text-vMd;

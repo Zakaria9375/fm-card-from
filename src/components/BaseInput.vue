@@ -15,7 +15,7 @@
 </script>
 
 <template>
-	<div>
+	<div class="mb-[26px]">
 		<label :for="nom" v-if="title">{{ title }}</label>
 		<input
 			v-bind="$attrs"

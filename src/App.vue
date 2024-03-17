@@ -68,12 +68,12 @@
 					<img
 						src="/images/card-logo.svg"
 						alt="card logo"
-						class="absolute top-[11.4%] left-[7%]"
+						class="absolute top-[11.43%] left-[7.16%]"
 					/>
-					<h2 class="absolute top-[56.73%] left-[7%]">
+					<h2 class="absolute top-[56.735%] left-[7.16%]">
 						{{ visaCard.cardNumber }}
 					</h2>
-					<div class="xflex absolute top-[81.83%] left-[7%] right-[7%]">
+					<div class="xflex absolute top-[81.837%] left-[7.16%] right-[7.16%]">
 						<span class="cd">{{ visaCard.cardName }}</span>
 						<p class="cd">
 							<span class="">{{ visaCard.month }}</span
@@ -85,18 +85,18 @@
 			<div class="relative w-[82.625%] self-end lmd:z-10">
 				<img src="/images/bg-card-back.png" alt="card back" />
 				<span
-					class="absolute right-[12.75%] top-[45.3%] lmd:top-[46.9%] cd text-white"
+					class="absolute right-[12.752%] top-[45.31%] lmd:top-[46.9%] cd text-white"
 					>{{ visaCard.cvc }}</span
 				>
 			</div>
 		</section>
 		<section
-			class="md:basis-[36%] md:max-w-[381px] lmd:zflex lmd:mt-10 lsm:mt-0 lmd:px-2 lmd:pb-11"
+			class="md:basis-[36.5%] md:max-w-[381px] lmd:zflex lmd:mt-10 lsm:mt-0 lmd:px-2 lmd:pb-11"
 		>
 			<form
 				v-if="!isSubmitted"
 				@submit.prevent="onSubmit"
-				class="space-y-[26px] max-w-[381px]"
+				class="max-w-[381px]"
 			>
 				<BaseInput
 					type="text"
@@ -107,6 +107,7 @@
 					v-bind="cardNameAttrs"
 					maxlength="25"
 					:error-message="errors.cardName"
+					
 				/>
 				<BaseInput
 					type="text"
@@ -119,7 +120,7 @@
 					:error-message="errors.cardNumber"
 				/>
 				<div class="flex gap-5">
-					<div class="tablet:basis-[60%] basis-1/2">
+					<div class="tablet:basis-[60%] basis-[170px]">
 						<label for="month">exp date (mm/yy)</label>
 						<div class="flex space-x-[10px]">
 							<BaseInput
@@ -142,7 +143,7 @@
 							/>
 						</div>
 					</div>
-					<div class="tablet:basis-[40%] basis-1/2">
+					<div class="tablet:basis-[40%] basis-[191px]">
 						<BaseInput
 							type="text"
 							nom="cvc"
@@ -155,7 +156,7 @@
 						/>
 					</div>
 				</div>
-				<button type="submit" class="btn">Confirm</button>
+				<button type="submit" class="btn mt-[14px]">Confirm</button>
 			</form>
 			<div v-else class="zflex flex-col">
 				<img src="/images/icon-complete.svg" alt="completed" />
@@ -172,7 +173,7 @@
 		@apply text-[12px] leading-[15px] uppercase tracking-[2px] mb-[9px] text-vDeep block;
 	}
 	input {
-		@apply border border-grey rounded-lg h-[45px] md:h-[54px] leading-[23px] text-vDeep px-4 py-[11px] w-full;
+		@apply border border-grey rounded-lg h-[45px] leading-[23px] text-vDeep px-4 py-[11px] w-full;
 	}
 	.btn {
 		@apply h-[53px] rounded-lg bg-vDeep text-center py-[15px] text-white leading-[23px] w-full;
